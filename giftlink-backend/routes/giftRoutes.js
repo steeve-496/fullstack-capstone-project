@@ -1,4 +1,4 @@
-/*jshint esversion: 8 */
+/*jshint esversion: 6 */
 const express = require('express');
 
 const router = express.Router();
@@ -7,7 +7,6 @@ const { connectToDatabase } = require('../models/db'); // Adjust the path to you
 const { ObjectId } = require('mongodb'); // Import ObjectId to handle MongoDB ObjectId types
 
 // Get all gifts
-
 router.get('/', async (req, res) => {
     try {
        
